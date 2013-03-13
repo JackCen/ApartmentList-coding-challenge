@@ -14,5 +14,6 @@ def norStr(str):
         return str[0] + norStr(str[1:])
 
 if __name__ == '__main__':
-    string = norStr(str(sys.argv[1]))
+    # modified part
+    string = norStr(sys.stdin.read())
     print(string)
